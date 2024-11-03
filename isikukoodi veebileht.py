@@ -116,14 +116,11 @@ def soovitatud_joogid(sugu, vanus, haigla):
      joogi_valik_vanusega = joogi_valik[vanuse_grupp]
      return joogi_valik_vanusega
 
-print(soovitatud_joogid('naine', 15, 'Alaealine'))
+
 idkood = input('Sisesta isikukood: ')
 
 if on_korrektne_isikukood(idkood):
     info = info_isikukoodist(idkood)
-    print(f'Sugu on {info[0]}')
-    print(f'Vanus on {info[1]}')
-    print(f'Haigla on {info[2]}')
     print(soovitatud_joogid(info[0], info[1], info[2]))
 
 else:
