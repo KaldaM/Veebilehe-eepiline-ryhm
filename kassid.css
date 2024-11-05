@@ -13,22 +13,35 @@ body {background-image: url("https://i.pinimg.com/564x/5c/ba/dc/5cbadcce56e484c0
             z-index: 1; /* Stacks content above the overlay */
             color: #FB928E; /* Makes text visible on a dark background */
             padding: 20px;
-            font-family: cursive
-        }
+            font-family: cursive;
+            font-size: 20px;}
 .mull {
-    position: relative;
+    position: absolute;
     text-align: center; 
     background-color: #F6F5E1; 
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 100px;
-    padding: 10px 25px;
-    width: 500px;
-    margin: auto
-    }
+    padding: 1px 100px;
+    width: 700px;
+    margin: top;
+    z-index: 3;}
 
-img {
-    border-radius: 50%
-    }
-/* .column {float:left; width: 50%;}
-.conteiner:after {content: ""; display: table; clear: both;} */
-/* .column {float:left; width: 50%;} */
-.conteiner {display:flex; height:300px; justify-content: center; align-items:start;}
+.column-1 {display: flex;
+    gap: 10px;
+    margin-top: 160px;
+    justify-content: space-between;
+    z-index: 2;}
+    .column-1 img {border-radius: 20%;}
+.column-2 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+    z-index: 2;}
+    .column-2 img {border-radius: 20%;}
+
+.conteiner {
+    position:relative;
+    line-height: 0;}
