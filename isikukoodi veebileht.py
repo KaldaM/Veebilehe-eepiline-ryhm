@@ -220,7 +220,7 @@ def soovitatud_joogid(sugu, vanus, haigla):
              'vana': ['Piim', 'Roheline tee', 'Absolut Vodka']
          },
          ('mees', 'Sünnitushaigla ei ole teada'): {
-             'noor': ['!', '@', '#'],
+             'noor': ['!', '@', 'Laua viin'],
              'keskiga': ['$', '%', '^'],
              'vana': ['Q', 'W', 'E']
          },
