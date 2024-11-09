@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eepiline joogisoovitaja</title>
   <link rel="stylesheet" type="text/css" href="pealeht.css">
 </head>
 <body>
-
 
 <div class="content">
   <div class="mull3">
@@ -14,14 +15,18 @@
   </div>
   
   <div class="mull2">
-    <form action="">
+    <form id="soovita-form">
         <label for="ikood" class="tekst1">Sisestage oma isikukood 🥺👉👈</label>
         <p></p>
         <input type="text" id="ikood" name="ikood" class="tekst1"><br><br>
-        <input type="submit" value="Soovita!" class="tekst1">
-            <p class="tekst2">Me ei säilita teie isikuandmeid*</p>
-      </form>
+        <button type="button" onclick="saadaIsikukood()">Soovita!</button>
+        <p class="tekst2">Me ei säilita teie isikuandmeid*</p>
+    </form>
   </div>
+  
+  <div id="joogisoovitused"></div>
+  <div id="error"></div>
+
   <div class="mull4">
     <a href="alamleht.html" class="tekst1">Tähtis</a>
   </div>
@@ -29,5 +34,7 @@
     <a href="kassid.html"><img src="https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png" alt="kiisu"></a>
     <a href="kassid.html"><img src="https://png.pngtree.com/png-vector/20231020/ourmid/pngtree-cute-kitty-cat-png-image_10236144.png" alt="kiisu2"></a>
   </div>
+
+  <script src="soovita.js"></script>
 </body>
 </html>
