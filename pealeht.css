@@ -99,3 +99,11 @@ body {background-image: url("https://media.istockphoto.com/id/1329957675/photo/b
     justify-content: space-between;
     z-index: 2;}
     .column-1 img {border-radius: 20%;}
+
+.soovitus {
+    color: aqua;
+}
+
+.isikuerror {
+    color: red;
+}

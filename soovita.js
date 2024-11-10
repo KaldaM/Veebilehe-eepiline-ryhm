@@ -278,14 +278,14 @@ function onKorrektneIsikukood(isikukoodStr) {
     errorEl.innerHTML = "";
   
     if (!onKorrektneIsikukood(ikood)) {
-      errorEl.innerHTML = "<p style='color: red;'>Pole korrektne isikukood</p>";
+      errorEl.innerHTML = "<p class='isikuerror'>Pole korrektne isikukood</p>";
       return;
     }
   
     const { sugu, vanus, haigla } = infoIsikukoodist(ikood);
     const joogid = soovitatudJoogid(sugu, vanus, haigla);
     
-    joogisoovitusedEl.innerHTML = "<h2>Soovitame järgmisi jooke:</h2><ul>" +
+    joogisoovitusedEl.innerHTML = "<h2 class='soovitus'>Soovitame järgmisi jooke:</h2><ul class='soovitus'>" +
                                   joogid.map(jook => `<li>${jook}</li>`).join('') +
                                   "</ul>";
   }
