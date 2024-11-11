@@ -121,19 +121,19 @@ function onKorrektneIsikukood(isikukoodStr) {
             vana: ["Piim", "Bock", "Viru Valge"]
           },
           "Maarjamõisa kliinikum (Tartu), Jõgeva haigla": {
-            noor: ["Fanta", "???", "???"],
-            keskiga: ["Kohv piimaga", "???", "???"],
-            vana: ["Kraanivesi", "???", "???"]
+            noor: ["Fanta", "Absolut Vodka", "Saaremaa Gin"],
+            keskiga: ["Kohv piimaga", "Saku Original", "Rock"],
+            vana: ["Kraanivesi", "Vana Tallinn", "Laua Viin"]
           },
           "Narva haigla": {
-            noor: ["Coca-Cola", "???", "???"],
-            keskiga: ["Kali", "???", "???"],
-            vana: ["Mullivesi", "???", "???"]
+            noor: ["Coca-Cola", "Somersby siider", "Sparta"],
+            keskiga: ["Kali", "Laua Viin", "Jägermeister"],
+            vana: ["Mullivesi", "Absolut Vodka", "Viin Saaremaa"]
           },
           "Pärnu haigla": {
-            noor: ["Red Bull", "???", "???"],
-            keskiga: ["Keefir", "???", "???"],
-            vana: ["Marjasmuuti", "???", "???"]
+            noor: ["Red Bull", "Mernaya viin", "Claytons"],
+            keskiga: ["Keefir", "Captain Morgan", "Viru Valge"],
+            vana: ["Marjasmuuti", "Bock", "Valge Venelane"]
           },
           "Haapsalu haigla": {
             noor: ["Kali", "Saku on Ice", "Mernaya viin"],
@@ -142,8 +142,8 @@ function onKorrektneIsikukood(isikukoodStr) {
           },
           "Järvamaa haigla (Paide)": {
             noor: ["Coca-Cola", "???", "???"],
-            keskiga: ["Saku Original alkoholivaba", "???", "???"],
-            vana: ["Proteiinijook", "???", "???"]
+            keskiga: ["Saku Original alkoholivaba", "Absolut Vodka", "???"],
+            vana: ["Proteiinijook", "Vana Tallinn", "Alexander"]
           },
           "Rakvere haigla, Tapa haigla": {
             noor: ["Claytons", "Somersby siider", "Saku On Ice ploom õlu"],
@@ -152,7 +152,7 @@ function onKorrektneIsikukood(isikukoodStr) {
           },
           "Valga haigla": {
             noor: ["Pepsi", "A.Le Coq G:N Grapefruit", "Saaremaa Gin"],
-            keskiga: ["Sierra Tequila Antiguo Plata", "Black Velvet viski", "Keefir"],
+            keskiga: ["Sierra Tequila", "Black Velvet viski", "Keefir"],
             vana: ["Roheline tee", "Absolut Vodka", "Saku kuld"]
           },
           "Viljandi haigla": {
@@ -161,17 +161,17 @@ function onKorrektneIsikukood(isikukoodStr) {
             vana: ["Banaanismuuti", "Piim", "Kakao"]
           },
           "Lõuna-Eesti haigla (Võru), Põlva haigla": {
-            noor: ["Limonaad", "Saku On Ice ploom õlu", "Red Bull"],
+            noor: ["Limpa limonaad", "Saku On Ice ploom õlu", "Red Bull"],
             keskiga: ["Budweiser", "Casino", "A. Le Coq Premium"],
             vana: ["Vana Tallinn", "Alexander", "Must tee"]
           },
           "Sünnitushaigla ei ole teada": {
-            noor: ["!", "@", "Laua viin"],
-            keskiga: ["$", "%", "^"],
-            vana: ["Q", "W", "E"]
+            noor: ["Sprite", "Sparta", "Laua viin"],
+            keskiga: ["Jäätee", "Jameson viski", "Muteki Jaapani viiski"],
+            vana: ["Kakao", "Sierra Tequila", "Viru Valge"]
           },
           "Alaealine": {
-            noor: ["Limonaad", "Vesi", "Coca"]
+            noor: ["Limpa limonaad", "Vesi", "Coca"]
           }
         },
         naine: {
@@ -197,33 +197,33 @@ function onKorrektneIsikukood(isikukoodStr) {
           },
           "Rapla haigla, Loksa haigla, Hiiumaa haigla (Kärdla)": {
             noor: ["Pepsi", "Longero", "Captain Morgan"],
-            keskiga: ["Mullivesi", "Corona", "???"],
-            vana: ["Kali", "???", "???"]
+            keskiga: ["Mullivesi", "Corona", "Valge rumm"],
+            vana: ["Kali", "Koch Tulivesi viin", "Vana Tallinn"]
           },
           "Ida-Viru keskhaigla (Kohtla-Järve, endine Jõhvi)": {
             noor: ["Segumahl", "Cooler", "Mojito"],
             keskiga: ["Jääkohv", "Kingsmill", "Valge vein"],
-            vana: ["Õunamahl", "???", "???"]
+            vana: ["Õunamahl", "Hennessy", "Alexander"]
           },
           "Maarjamõisa kliinikum (Tartu), Jõgeva haigla": {
-            noor: ["Kakao", "???", "???"],
-            keskiga: ["Kohv", "Punane vein", "???"],
-            vana: ["Piim", "???", "???"]
+            noor: ["Kakao", "Saku Original", "Sparta"],
+            keskiga: ["Kohv", "Punane vein", "Saarenaa Gin"],
+            vana: ["Piim", "Viin Saaremaa", "Vana Tallinn"]
           },
           "Narva haigla": {
-            noor: ["Limonaad", "???", "???"],
-            keskiga: ["Must tee", "???", "???"],
-            vana: ["Banaanismuuti", "???", "???"]
+            noor: ["Limonaad", "Somersby siider", "Longero"],
+            keskiga: ["Must tee", "Valge rumm", "Heineken"],
+            vana: ["Banaanismuuti", "Laua Viin", "Absolut Vodka"]
           },
           "Pärnu haigla": {
-            noor: ["Kraanivesi", "???", "???"],
-            keskiga: ["Piim", "Punane vein", "???"],
-            vana: ["Roheline tee", "???", "???"]
+            noor: ["Kraanivesi", "Captain Morgan", "Somersby siider"],
+            keskiga: ["Piim", "Punane vein", "Jameson viski"],
+            vana: ["Roheline tee", "Alexander", "Valge vein"]
           },
           "Haapsalu haigla": {
-            noor: ["Sprite", "???", "???"],
-            keskiga: ["Kohv piimaga", "???", "???"],
-            vana: ["Must tee", "???", "???"]
+            noor: ["Sprite", "Martini", "Ballentine's viski"],
+            keskiga: ["Kohv piimaga", "Corona", "Muteki Jaapani viski"],
+            vana: ["Must tee", "Mozart Dark Chocolate liköör", "Hennessy"]
           },
           "Järvamaa haigla (Paide)": {
             noor: ["Jääkohv", "Longero", "Original Hartwall gin"],
@@ -236,9 +236,9 @@ function onKorrektneIsikukood(isikukoodStr) {
             vana: ["Piim", "Punane vein", "Viin Saaremaa"]
           },
           "Valga haigla": {
-            noor: ["Jäätee", "Red Bull", "Saku Originaal"],
-            keskiga: ["Fizz Blueberry siider", "Zubrowka Biala viin", "Angel Medium Sweet White vahuvein"],
-            vana: ["Mullivesi", "Mozart Dark Chocolate", "Southern Road Cabernet Sauvignon vein"]
+            noor: ["Jäätee", "Red Bull", "Saku Original"],
+            keskiga: ["Fizz mustikasiider", "Zubrowka Biala viin", "Valge vahuvein"],
+            vana: ["Mullivesi", "Mozart Dark Chocolate liköör", "Southern Road Cabernet Sauvignon vein"]
           },
           "Viljandi haigla": {
             noor: ["Aura multinektar", "Kohvi", "Original Hartwall Long Drink sidrun"],
@@ -251,9 +251,9 @@ function onKorrektneIsikukood(isikukoodStr) {
             vana: ["Piim", "Roheline tee", "Absolut Vodka"]
           },
           "Sünnitushaigla ei ole teada": {
-            noor: ["A", "S", "D"],
-            keskiga: ["Z", "X", "C"],
-            vana: ["F", "G", "H"]
+            noor: ["Juissi", "Asahi Super Dry õlu", "Saaremaa Gin"],
+            keskiga: ["Proteiinijook", "Laua Viin", "Rock"],
+            vana: ["Must tee", "Jägermeister", "Mozart Chocolate liköör"]
           },
           "Alaealine": {
             noor: ["Fanta", "Vesi", "Piim"]
