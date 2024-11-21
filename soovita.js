@@ -141,8 +141,8 @@ function onKorrektneIsikukood(isikukoodStr) {
             vana: ["Kohv piimaga", "Rock", "Balletine's viski"]
           },
           "Järvamaa haigla (Paide)": {
-            noor: ["Coca-Cola", "???", "???"],
-            keskiga: ["Saku Original alkoholivaba", "Absolut Vodka", "???"],
+            noor: ["Coca-Cola", "Laua Viin", "Heineken"],
+            keskiga: ["Saku Original alkoholivaba", "Absolut Vodka", "Falima Ship brändi"],
             vana: ["Proteiinijook", "Vana Tallinn", "Alexander"]
           },
           "Rakvere haigla, Tapa haigla": {
