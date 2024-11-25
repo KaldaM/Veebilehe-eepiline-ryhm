@@ -100,9 +100,10 @@ body {background-image: url("https://media.istockphoto.com/id/1329957675/photo/b
     z-index: 2;}
     .column-1 img {border-radius: 20%;}
 
-/* .soovitus {
-    color: aqua;
-} */
+.joogisoovitus {
+    margin: 5px 0;
+    line-height: 1.5
+}
 
 .isikuerror {
     color: red;
