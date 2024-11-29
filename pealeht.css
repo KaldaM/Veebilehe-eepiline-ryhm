@@ -7,11 +7,11 @@ body {background-image: url("https://media.istockphoto.com/id/1329957675/photo/b
         right: 0;
         bottom: 0;
         background-color: rgba(255, 192, 203, 0.6);
-        z-index: 0; /* Ensures it's behind the content */}
+        z-index: 0; }
         .content {
-            position: relative; /* Ensures content appears above the overlay */
-            z-index: 1; /* Stacks content above the overlay */
-            color: #FB928E; /* Makes text visible on a dark background */
+            position: relative; 
+            z-index: 1;
+            color: #FB928E; 
             padding: 20px;
             font-family: cursive;
             font-size: 20px;}
@@ -69,7 +69,7 @@ body {background-image: url("https://media.istockphoto.com/id/1329957675/photo/b
     transform: translateX(-50%);
     border-radius: 100px;
     padding: 1px 100px;
-    width: 350px;
+    width: 500px;
     height: 100px;
     padding-top: 25px;}
 
