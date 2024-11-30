@@ -113,7 +113,8 @@ function onKorrektneIsikukood(isikukoodStr) {
  * See funktsioon sisaldab sõnastiku, kus on jagatud kategooriateks mehed ja naised.
  * Nad jagunevad edasi haiglateks
  * Haiglad jagunevad kolme vanusegruppi - noor, keskiga ja vana
- * Algne loogika loodud Pythonis, konverteeritud JavaScripti ChatGPT abiga  */
+ * Algne loogika loodud Pythonis, konverteeritud JavaScripti ChatGPT abiga 
+ */
 function soovitatudJoogid(sugu, vanus, haigla) {
   const joogid = {
       mees: {
@@ -300,7 +301,7 @@ function soovitatudJoogid(sugu, vanus, haigla) {
  * See on funktsioon, mis kutsutakse esile pealeht.html kaudu.
  * Funktsioon käivitab funktsioonid onKorrektneIsikukood, infoIsikukoodist ja soovitatudJoogid
  * Funktsioon tagastab saadud info pealehele.
-*/
+ */
 function saadaIsikukood() {
   const ikood = document.getElementById("ikood").value;
   const joogisoovitusedEl = document.getElementById("joogisoovitused");
