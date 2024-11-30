@@ -296,7 +296,11 @@ function soovitatudJoogid(sugu, vanus, haigla) {
   return ['Soovitused puuduvad'];
 }
 
-// See funktsioon tagastab programmi abil saadud info pealehele
+/** 
+ * See on funktsioon, mis kutsutakse esile pealeht.html kaudu.
+ * Funktsioon käivitab funktsioonid onKorrektneIsikukood, infoIsikukoodist ja soovitatudJoogid
+ * Funktsioon tagastab saadud info pealehele.
+*/
 function saadaIsikukood() {
   const ikood = document.getElementById("ikood").value;
   const joogisoovitusedEl = document.getElementById("joogisoovitused");
