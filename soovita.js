@@ -1,3 +1,14 @@
+/**
+ *  See JavaScripti kood põhineb algselt Matteuse Kalda loodud Pythoni koodil.
+ * See on konverteeritud JavaScripti, kasutades OpenAI abimeest (ChatGPT).
+ * Algkood ja selle ideed on loodud 2024. aastal.
+ */
+
+
+/**
+ * Funktsioon isikukoodist info tuvastamiseks.
+ * Algne loogiks loodud Pythonis, konverteeritud JavaScripti ChatGPT abiga.
+ */
 function infoIsikukoodist(isikukoodStr) {
     const isikukoodList = Array.from(isikukoodStr, Number);
     let sugu;
@@ -61,9 +72,14 @@ function infoIsikukoodist(isikukoodStr) {
     return { sugu, vanus, haigla };
 }
 
+/**
+ * Funktsioon isikukoodi õigsuese kontrollimiseks.
+ * Arvutuseks vajalikud tehted on kirjutatud isikukoodi Wikipedia lehelt saadud info põhjal
+ * Algne loogika loodud Pythonis, konverteeritud JavaScripti ChatGPT abiga.
+ */
 function onKorrektneIsikukood(isikukoodStr) {
 
-    // Kontrolli, kas isikukood on täpselt 11 numbrit
+    // Kontrollib, kas isikukood on täpselt 11 numbrit
     if (!/^\d{11}$/.test(isikukoodStr)) {
       return false; // Kui isikukood ei vasta nõuetele (pole täpselt 11 numbrit), on see vigane
     }
@@ -92,7 +108,12 @@ function onKorrektneIsikukood(isikukoodStr) {
 
     return kontrollNrKoodil === kontrollNr;
 }
-  
+
+/**
+ * See funktsioon sisaldab sõnastiku, kus on jagatud kategooriateks mehed ja naised.
+ * Nad jagunevad edasi haiglateks
+ * Haiglad jagunevad kolme vanusegruppi - noor, keskiga ja vana
+ * Algne loogika loodud Pythonis, konverteeritud JavaScripti ChatGPT abiga  */
 function soovitatudJoogid(sugu, vanus, haigla) {
   const joogid = {
       mees: {
@@ -256,18 +277,18 @@ function soovitatudJoogid(sugu, vanus, haigla) {
           keskiga: ["Monkey Gland", "Martini", "Karl Friedrich"],
           vana: ["Piim", "Roheline tee", "Absolut Vodka"]
         },
-        "Sünnitushaigla ei ole teada": {
+        "Sünnitushaigla ei ole teada": { // Alati ei pruugi olla isikukoodist võimalik haiglat määrata.
           noor: ["Juissi", "Asahi Super Dry õlu", "Saaremaa Gin"],
           keskiga: ["Proteiinijook", "Laua Viin", "Rock"],
           vana: ["Must tee", "Jägermeister", "Mozart Chocolate liköör"]
         },
         "Alaealine": {
-          noor: ["Fanta", "Vesi", "Piim"]
+          noor: ["Fanta", "Vesi", "Piim"] // Alaealistele me alkoholi ei soovita
         }
       }
     };
 
-  let vanuseGrupp = vanus < 35 ? 'noor' : vanus < 55 ? 'keskiga' : 'vana';
+  let vanuseGrupp = vanus < 35 ? 'noor' : vanus < 55 ? 'keskiga' : 'vana'; // Määrab, mis vahemikud on mingile vanusegrupile
   let suguJoogid = joogid[sugu];
   if (suguJoogid && suguJoogid[haigla] && suguJoogid[haigla][vanuseGrupp]) {
     return suguJoogid[haigla][vanuseGrupp];
@@ -275,6 +296,7 @@ function soovitatudJoogid(sugu, vanus, haigla) {
   return ['Soovitused puuduvad'];
 }
 
+// See funktsioon tagastab programmi abil saadud info pealehele
 function saadaIsikukood() {
   const ikood = document.getElementById("ikood").value;
   const joogisoovitusedEl = document.getElementById("joogisoovitused");
@@ -284,7 +306,7 @@ function saadaIsikukood() {
   errorEl.innerHTML = "";
 
   if (!onKorrektneIsikukood(ikood)) {
-    errorEl.innerHTML = "<p class='isikuerror'>Pole korrektne isikukood</p>";
+    errorEl.innerHTML = "<p class='isikuerror'>Pole korrektne isikukood</p>"; // Tagastus, kui kontrolli põhjal oli isikikood vigane. class abil on võimalik css failis värvi muuta
     return;
   }
 
@@ -292,5 +314,5 @@ function saadaIsikukood() {
   const joogid = soovitatudJoogid(sugu, vanus, haigla);
   
   joogisoovitusedEl.innerHTML = "<h2 class='soovitus'>Soovitame järgmisi jooke:</h2>" +
-                                joogid.map(jook => `<p class='joogisoovitus'>${jook}</p>`).join('');
+                                joogid.map(jook => `<p class='joogisoovitus'>${jook}</p>`).join(''); // Tagstab joogisoovitused üksteise all. class abil saab css failis reavahet vähendada
 }
