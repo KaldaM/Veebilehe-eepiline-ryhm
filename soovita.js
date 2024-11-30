@@ -1,5 +1,5 @@
 /**
- *  See JavaScripti kood põhineb algselt Matteuse Kalda loodud Pythoni koodil.
+ * See JavaScripti kood põhineb algselt Matteuse Kalda loodud Pythoni koodil.
  * See on konverteeritud JavaScripti, kasutades OpenAI abimeest (ChatGPT).
  * Algkood ja selle ideed on loodud 2024. aastal.
  */
@@ -7,7 +7,7 @@
 
 /**
  * Funktsioon isikukoodist info tuvastamiseks.
- * Algne loogiks loodud Pythonis, konverteeritud JavaScripti ChatGPT abiga.
+ * Algne loogika loodud Pythonis, konverteeritud JavaScripti ChatGPT abiga.
  */
 function infoIsikukoodist(isikukoodStr) {
     const isikukoodList = Array.from(isikukoodStr, Number);
@@ -110,7 +110,7 @@ function onKorrektneIsikukood(isikukoodStr) {
 }
 
 /**
- * See funktsioon sisaldab sõnastiku, kus on jagatud kategooriateks mehed ja naised.
+ * See funktsioon sisaldab sõnastikku, kus on jagatud kategooriateks mehed ja naised.
  * Nad jagunevad edasi haiglateks
  * Haiglad jagunevad kolme vanusegruppi - noor, keskiga ja vana
  * Algne loogika loodud Pythonis, konverteeritud JavaScripti ChatGPT abiga 
@@ -311,7 +311,7 @@ function saadaIsikukood() {
   errorEl.innerHTML = "";
 
   if (!onKorrektneIsikukood(ikood)) {
-    errorEl.innerHTML = "<p class='isikuerror'>Pole korrektne isikukood</p>"; // Tagastus, kui kontrolli põhjal oli isikikood vigane. class abil on võimalik css failis värvi muuta
+    errorEl.innerHTML = "<p class='isikuerror'>Pole korrektne isikukood</p>"; // Tagastus, kui kontrolli põhjal oli isikukood vigane. class abil on võimalik css failis värvi muuta
     return;
   }
 
@@ -319,5 +319,5 @@ function saadaIsikukood() {
   const joogid = soovitatudJoogid(sugu, vanus, haigla);
   
   joogisoovitusedEl.innerHTML = "<h2 class='soovitus'>Soovitame järgmisi jooke:</h2>" +
-                                joogid.map(jook => `<p class='joogisoovitus'>${jook}</p>`).join(''); // Tagstab joogisoovitused üksteise all. class abil saab css failis reavahet vähendada
+                                joogid.map(jook => `<p class='joogisoovitus'>${jook}</p>`).join(''); // Tagastab joogisoovitused üksteise all. class abil saab css failis reavahet vähendada
 }
