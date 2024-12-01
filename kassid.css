@@ -35,7 +35,7 @@ body {background-image: url("https://i.pinimg.com/564x/5c/ba/dc/5cbadcce56e484c0
     z-index: 2;}
     .column-1 img {border-radius: 20%;}
 .column-2 {
-    display: flex;
+    display: none;
     gap: 10px;
     margin-top: 20px;
     justify-content: space-between;
