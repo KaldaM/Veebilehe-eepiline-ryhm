@@ -48,7 +48,7 @@ function infoIsikukoodist(isikukoodStr) {
 
     // Haigla määramine
     let haigla = vanus < 18 ? 'Alaealine' : 'Täisealine';
-    if (parseInt(aasta) < 2013) {
+    if (parseInt(aasta) < 2013 && vanus >= 18) {
         const haiglaNr = parseInt(isikukoodList.slice(7, 10).join(''));
 
         if (haiglaNr >= 1 && haiglaNr <= 10) haigla = 'Kuressaare haigla';
